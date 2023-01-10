@@ -1,0 +1,45 @@
+- Воссоздайте карточку https://ucarecdn.com/273a0fa1-3202-4f0c-9159-6ddae53682c1/
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+      <img src="https://source.unsplash.com/WLUHO9A_xik/600x300" alt="img">
+      <p class="title"><strong><span>Вулкан Бромо</span>, Индонезия</strong> </p>
+      <p class="text">Действующий вулкан в Индонезии, входящий в <strong>вулканический комплекс Тенгер</strong>. Расположен на востоке острова Ява. Имеет высоту <em>2392</em> метра. <span>Вулкан Бромо</span> входит в состав национального парка Бромо-Тенгер-Семеру.</p>
+      <a href="https://en.wikipedia.org/wiki/Mount_Bromo">Подробнее</a>
+  </div>
+</body>
+</html>
+
+
+СSS
+body {
+  font-family: Roboto;
+  color: #000;
+}
+img{
+  width: 100%;
+  height: 200px;
+}
+div{
+  width: 300px;
+  background: #e1e1e1;
+  padding: 15px
+}
+p{
+  font-size: 18px;
+}
+span{
+  color: #48828a;
+}
+a{
+  color: #48828a;
+}
