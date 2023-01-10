@@ -1,0 +1,149 @@
+- Вам нужно сверстать footer сайта из макета https://www.figma.com/file/102b19H2eHKy8qTdEGgIaJ/Footer-for-course?node-id=0%3A1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+     <div class="wrapper">
+        <main class="main"></main>
+        <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__top">
+          <div class="footer__left">
+            <a href="" class="logo">COMPANY</a>
+            <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="contact">Как с нами связаться</div>
+            <a href="" class="phone">+7 (495) 000-00-00</a>
+            <div class="address">Москва, ул. Московская, д. 2, стр. 1</div>
+          </div>
+        </div>
+        <div class="footer__bottom">© 2021 COMPANY All Rights Reserved.</div>
+      </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+CSS
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background: #05a88d;
+  padding: 44px 40px 36px 40px;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  border-bottom: 1px solid #ffffff;
+}
+.footer__left {
+}
+.logo {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  color: #f1e67d;
+  margin-bottom: 22px;
+}
+.text {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+.footer__right {
+}
+.contact {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.phone {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: #f1e67d;
+  margin-bottom: 16px;
+}
+.address {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer__bottom {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-top: 36px;
+}
