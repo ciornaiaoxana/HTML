@@ -1,0 +1,122 @@
+- Вам нужно сверстать карточку для сайта из макета https://www.figma.com/file/IIf4XPgZlWiY29cjsO4Knk/Cards-for--course?node-id=1%3A2
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Подключите стили -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Подключите шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--новый шрифт----------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+    <!------------------------------------>
+    <main class="main">
+      <!-- Карточка -->
+      <div class="container">
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80I"
+              alt="Image"
+            />
+          </div>
+          <div class="card__content">
+            <div class="card__title">Pragser Wildsee, Italy</div>
+            <div class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </div>
+            <button class="card__btn">BOOKING</button>
+          </div>
+        </div>
+      </div>
+      <!-- Карточка -->
+    </main>
+  </body>
+</html>
+
+
+CSS
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #15638f;
+}
+.card {
+  width: 200px;
+  height: 322px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.card__content {
+  padding: 16px 19px 16px 17px;
+}
+.card__title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.card__text {
+  width: 165px;
+  height: 73px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 14px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.card__btn {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+  color: #ffffff;
+  width: 98px;
+  height: 27px;
+  background: #2797b2;
+  border-radius: 50px;
+  border: none;
+}
